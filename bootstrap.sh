@@ -1,7 +1,7 @@
 sudo apt update && sudo apt upgrade -y
+sudo apt install -y zsh curl git
 
-sudo apt install -y zsh
-sRUNZSH=no CHSH=no sh -c \
+RUNZSH=no CHSH=no sh -c \
   "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-curl -fsSL https://opencode.ai/install | zsh
+zsh -c "curl -fsSL https://opencode.ai/install | zsh"
