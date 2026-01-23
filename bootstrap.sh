@@ -1,7 +1,8 @@
 sudo apt update && sudo apt upgrade -y
-sudo apt install -y zsh curl git
+sudo apt install python3 python3-pip python3-venv
+sudo apt install -y zsh curl git nvim gh
 
-RUNZSH=no CHSH=no sh -c \
+curl -fsSL https://opencode.ai/install | bash
+
+RUNZSH=yes CHSH=yes sh -c \
   "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
-zsh -c "curl -fsSL https://opencode.ai/install | zsh"
